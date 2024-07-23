@@ -16,3 +16,6 @@ Este projeto consiste em uma calculadora de Índice de Massa Corporal (IMC) bás
 - Calcula o IMC usando a fórmula IMC = peso / (altura * altura).
 - Classifica o IMC calculado em uma das categorias: abaixo do peso, peso normal, sobrepeso, obesidade grau I, II ou III.
 - Exibe o resultado do IMC e a classificação correspondente de forma clara e legível na página.
+
+### Git Pages
+<https://magdielpaulo.github.io/IMC/>
