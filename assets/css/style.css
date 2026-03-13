@@ -1,133 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@900&family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Rokkitt:wght@200;400;700&display=swap');
-
-:root {
-  --primary-color: linear-gradient(
-    45deg,
-    rgb(159, 89, 199),
-    rgb(240, 15, 221)
-  );
-}
-
-* {
-  box-sizing: border-box;
-  outline: 0;
-}
-
-html {
-  background: linear-gradient(-45deg, #762074, #581857, #b55bb1, #ffd3ff);
-  background-size: 400% 400%;
-  background-repeat: no-repeat;
-  animation: change 10s ease-in-out infinite;
-}
+/* Importando uma fonte moderna do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
 body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  font-family: 'Open sans', sans-serif;
-  font-size: 1.3em;
-  line-height: 1.5em;
-  background-color: var(--primary-color);
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-h1 {
-  text-align: center;
-}
-
-.container {
-  max-width: 50%; 
-  margin: 50px auto;
-  background: var(--primary-color);
-  padding: 20px 5%; 
+/* Customização do Card da Calculadora */
+.custom-card {
+  border: none;
   border-radius: 20px;
-  box-shadow: 10px 10px 20px rgb(15, 15, 15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
 }
 
-form input,
-form label {
-  width: 100%;
-  margin-bottom: 10px;
-  border: none;
-  padding: 10px;
-  font-size: 18px;
-  transition: border-color 0.3s ease; /* Adiciona transição suave na cor da borda */
+/* Customização dos Inputs */
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 
-form button {
-  border: none;
-  background: var(--primary-color);
-  color: rgb(0, 0, 0);
-  font-size: 18px;
-  font-weight: 700;
-  height: 50px;
-  cursor: pointer;
-  margin-top: 30px;
+/* Animação do Botão */
+.custom-btn {
   border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
 }
 
-form button:hover {
-  background-color: var(--primary-color); 
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7); 
+.custom-btn:hover {
+  transform: scale(1.02);
+  letter-spacing: 0.5px;
 }
 
-input[type='submit'] {
-  font-weight: 700;
-  width: 100%; 
-  margin-top: 20px;
-  border-radius: 10px;
-  transition: all 0.1s ease;
-  background: rgb(143, 240, 172);
-}
-
-input[type='submit']:hover {
-  background: linear-gradient(to bottom, rgb(150, 54, 126), rgb(123, 29, 126));
-  letter-spacing: 0.3px;
-}
-
-.error-input {
-  border-bottom: solid 1px red;
-}
-
-.paragrafo-resultado .bad {
-  background: var(--primary-color);
-  padding: 10px;
-}
-
-.bad {
-  background: red;
-  border-radius: 10px; /* Rounded corners */
-  padding: 15px; /* Add some padding around the message */
-  margin: 20px auto; /* Center the message horizontally */
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7); 
-}
-
-
-@keyframes change {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
-}
-
-/* Media queries para ajustar conforme necessidade */
-
-@media (max-width: 768px) {
-  .container {
-    padding: 20px 10px; /* Reduzindo o padding para telas menores */
-  }
-  
-  form button {
-    font-size: 16px; /* Ajuste de tamanho de fonte para botão */
-  }
+/* Suavização de transição para o ícone do Dark Mode */
+#themeToggle i {
+  transition: all 0.3s ease;
 }
