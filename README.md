@@ -1,21 +1,32 @@
-## Calculadora de IMC Básica com HTML, CSS e JavaScript
+# Calculadora de IMC Moderna ⚖️
 
-### Descrição do Projeto
+**Acesse o projeto online:** [Calculadora de IMC no GitHub Pages](https://magdielpaulo.github.io/IMC/)
 
-Este projeto consiste em uma calculadora de Índice de Massa Corporal (IMC) básica, utilizando HTML, CSS e JavaScript. O objetivo é criar uma interface simples que permita ao usuário inserir seu peso e altura. Em seguida, o sistema calculará o IMC com base nos dados inseridos e exibirá o valor do IMC e a classificação correspondente (abaixo do peso, peso normal, sobrepeso, obesidade graus I, II ou III).
+## Descrição do Projeto
 
-### Tecnologias Utilizadas
+Este projeto consiste em uma calculadora interativa de Índice de Massa Corporal (IMC). O objetivo é fornecer uma ferramenta simples, rápida e visualmente agradável para que os usuários descubram sua classificação de peso com base na altura e no peso informados. 
 
-- **HTML**: Utilizado para estruturar o conteúdo da página e definir os elementos da interface do usuário.
-- **CSS**: Responsável pela estilização da página, incluindo layout, cores, fontes e outros elementos visuais para proporcionar uma experiência agradável ao usuário.
-- **JavaScript**: Utilizado para capturar os dados de entrada do usuário, realizar o cálculo do IMC com base nos valores de peso e altura fornecidos, e exibir dinamicamente o resultado na página.
+O projeto original foi refatorado para incluir uma interface de usuário (UI) mais moderna, design responsivo e recursos de acessibilidade, como a alternância entre temas Claro e Escuro (Dark Mode).
 
-### Funcionalidades
+## Tecnologias Utilizadas
 
-- Permite ao usuário inserir seu peso (em quilogramas) e altura (em metros).
-- Calcula o IMC usando a fórmula IMC = peso / (altura * altura).
-- Classifica o IMC calculado em uma das categorias: abaixo do peso, peso normal, sobrepeso, obesidade grau I, II ou III.
-- Exibe o resultado do IMC e a classificação correspondente de forma clara e legível na página.
+A versão atualizada do projeto utiliza as seguintes tecnologias:
 
-### Git Pages
-<https://magdielpaulo.github.io/IMC/>
+* **HTML5:** Estruturação semântica do conteúdo.
+* **CSS3 & Bootstrap 5.3:** Estilização avançada, layout responsivo via sistema de grids e componentes de interface em formato de *Cards*.
+* **Bootstrap Icons:** Utilização de ícones vetoriais para melhorar a experiência do usuário (UX).
+* **JavaScript (ES6+):** Lógica de cálculo, manipulação do DOM, validação de dados e alertas dinâmicos.
+* **Web Storage API (`localStorage`):** Utilizado para salvar a preferência de tema (Claro/Escuro) do usuário no navegador.
+
+## Funcionalidades
+
+* **Cálculo Preciso:** Permite inserir peso (em kg) e altura (em metros) para calcular o IMC através da fórmula padrão.
+* **Classificação Automática:** Categoriza o resultado retornado (Abaixo do peso, Peso normal, Sobrepeso, Obesidade grau I, II ou III).
+* **Dark Mode / Light Mode:** Botão interativo que alterna o tema da aplicação, salvando a escolha do usuário para visitas futuras.
+* **Validação de Entradas:** Impede o envio de campos vazios ou com dados inválidos, retornando feedback visual (alertas de erro).
+* **Feedback Visual Dinâmico:** Utilização de alertas do Bootstrap (Sucesso e Perigo) combinados com ícones para exibir o resultado da operação.
+* **Totalmente Responsivo:** A interface se adapta perfeitamente a dispositivos móveis, tablets e desktops.
+
+## Autor
+
+Desenvolvido por **Magdiel Paulo**.
